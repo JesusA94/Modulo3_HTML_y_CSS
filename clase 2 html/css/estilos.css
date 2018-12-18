@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: yellow;
+}
+
+figure {
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  background: rgba(5, 238, 255, 0.986);
+}
+
+nav li {
+  display: inline;
+}
+
+.imagen {
+  background: orange;
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin: 30px;
+  overflow: auto;
+}
+
+.imagen img {
+  width: 60%;
+}
+
+.imagen img:hover {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+
+.imagen:hover {
+  background: blue;
+}

@@ -1,0 +1,96 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.flex-container {
+  width: 60%;
+  height: 500px;
+  background: gray;
+  margin: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*
+flex-direction:
+-row-fila
+-row-reverse-fila al contrario
+-column-columna
+-column-reverse- columna al contrario
+*/
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  /*
+  flex-wrap:
+  -nowrap-valor por defecto, ajusta automaticamente los tamaños de los hijos
+  -wrap-muestra el tamaño original de los hijos y cubre los espacios del padre
+  -wrap-reverse - igual qie wrap pero al contrario
+  */
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  /*
+  justify-content:
+  -flex-star
+  -flex-end
+  -center
+  -space-around
+  -space-between
+  -space-evenly
+  */
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*
+  align-items:
+  -flex-star
+  -flex-end
+  -center
+  -space-around
+  -space-between
+  */
+}
+
+.flex-item {
+  background: orange;
+  padding: 5px;
+  margin: 5px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  /* hacer crecer al item*/
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  /* disminuye al item*/
+  -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+          flex-basis: 200px;
+  /*especifica el tamaño del item */
+}
+
+.flex-item:nth-child(2) {
+  background: blue;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.flex-item:nth-child(5) {
+  background: yellow;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}

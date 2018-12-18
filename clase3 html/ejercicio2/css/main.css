@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.formulario-registro {
+  width: 40%;
+  background: #ccc;
+  margin: auto;
+  padding: 15px;
+}

@@ -1,0 +1,77 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.flex 
+{
+  &-container
+  {
+      width: 60%;
+      height: 500px;
+      background: gray;
+      margin: auto;
+      display: flex;
+      flex-direction:row;
+
+/*
+flex-direction:
+-row-fila
+-row-reverse-fila al contrario
+-column-columna
+-column-reverse- columna al contrario
+*/
+  flex-wrap: nowrap;
+
+  /*
+  flex-wrap:
+  -nowrap-valor por defecto, ajusta automaticamente los tamaños de los hijos
+  -wrap-muestra el tamaño original de los hijos y cubre los espacios del padre
+  -wrap-reverse - igual qie wrap pero al contrario
+  */
+  justify-content:space-around;
+  /*
+  justify-content:
+  -flex-star
+  -flex-end
+  -center
+  -space-around
+  -space-between
+  -space-evenly
+  */
+  align-items:center ;
+  /*
+  align-items:
+  -flex-star
+  -flex-end
+  -center
+  -space-around
+  -space-between
+  */
+  }
+  &-item
+  {
+      background: orange;
+      padding: 5px;
+      margin: 5px;
+      // width: 500px;
+      flex-grow: 1;  /* hacer crecer al item*/
+      flex-shrink: 1; /* disminuye al item*/
+      flex-basis: 200px; /*especifica el tamaño del item */
+     &:nth-child(2)
+     {
+         background: blue;
+         order: 0;
+         flex-grow: 3;
+     }
+     &:nth-child(5)
+     {
+         background: yellow;
+         order: 2;
+         flex-grow: 3;
+        
+     }
+      
+  }
+}

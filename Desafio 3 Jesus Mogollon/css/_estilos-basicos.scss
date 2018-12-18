@@ -1,0 +1,16 @@
+*
+{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: $tipografia;
+}
+header { background:$color-Morado; }
+h1 { color:$color-Morado; }
+.contenedor-imagenes:nth-child(1) { background: $color-Rosado; }
+.contenedor-imagenes:nth-child(2) { background: $color-Azul; }
+.contenedor-imagenes:nth-child(3) { background: $color-Naranja;}
+.contenedor-imagenes:nth-child(4) { background: $color-Morado; }
+p { text-align: center; font-size: 18px; color: white;}
+a { color: white; text-decoration: none;}
+

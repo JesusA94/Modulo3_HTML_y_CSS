@@ -1,0 +1,277 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*Para los Fondos*/
+figure,nav{ background: #aed6f1;}
+#uno{background: #3498db;}
+#dos {background: #ec7063;}
+#tres{background: #81d73d;}
+#cuatro {background: #9b59b6;}
+
+
+h1 
+{
+  text-align: center;
+  position: relative;
+  color: white;
+  font-size: 70px;
+  top: 30%;
+}
+header 
+  {
+    margin: 30px auto;
+    width: 98%;
+    height: 70px;
+  }
+  figure 
+ {
+    width: 12%;
+    height: 70px;
+    float: left;
+ }
+nav 
+ {
+    width: 85%;
+    height: 70px;
+    float: right;
+ }
+
+ #uno
+ {
+  width: 98%;
+  height: 200px;
+  margin: 30px auto;
+ }
+
+#dos, #tres, #cuatro
+ {
+  float: left;
+  width: 30%;
+  height: 250px;
+  margin: 15px;
+ }
+
+
+/*  Version Escritorio   */
+@media (min-width:1024px) and (max-width:1200px)
+{
+  header 
+  {
+    margin: 30px auto;
+    width: 98%;
+    height: 70px;
+  }
+  figure 
+ {
+    width: 12%;
+    height: 70px;
+    float: left;
+ }
+nav 
+ {
+    width: 85%;
+    height: 70px;
+    float: right;
+ }
+
+ #uno
+ {
+  width: 98%;
+  height: 200px;
+  margin: 30px auto;
+ }
+
+#dos, #tres, #cuatro
+ {
+  float: left;
+  width: 30%;
+  height: 250px;
+  margin: 15px;
+  padding: 2px;
+ }
+}
+
+
+/*  Version Tablet  */
+@media (min-width:768px) and (max-width:768px)
+{
+  header
+  {
+    margin: 30px auto;
+    width: 98%;
+    height: 70px;
+  }
+  figure 
+ {
+    width: 12%;
+    height: 70px;
+    float: left;
+ }
+nav 
+ {
+    width: 85%;
+    height: 70px;
+    float: right;
+ }
+ #uno
+ {
+  width: 98%;
+  height: 200px;
+  margin: 10px auto;
+ }
+#dos, #tres
+{
+  float: left;
+  padding: 10px;
+}
+ #dos
+ {
+   width: 45%;
+   margin: 9px;
+   height: 200px;
+ }
+ #tres
+ {
+  width: 45%;
+  margin: 9px;
+  height: 200px;
+ }
+ #cuatro
+ {
+   clear: both;
+   margin:6px;
+   width: 97%;
+   height: 200px;
+   padding: 4px;
+ }
+}
+
+/* Version Celular */
+@media (min-width:320px) and (max-width:320px)
+{
+  header
+  {
+    margin:5px auto;
+    height: 20px;
+  }
+  figure
+  {
+    display: none;
+  }
+nav 
+ {
+    height: 60px;
+    width: 100%;
+    margin:5px auto;
+    float: left;
+    
+ }
+ #uno
+ {
+  width: 98%;
+  height: 60px;
+  margin:50px ;
+  left: -47px;
+  position: relative;
+  
+ 
+ }
+ #dos
+ {
+   width: 98%;
+   margin: 10px auto ;
+   height: 60px;
+   position: relative;
+   left: 3px;
+   top:-50px;
+   
+   
+ }
+ #tres
+ {
+  width: 98%;
+  left: 3px;
+  height: 60px;
+  margin: 10px auto;
+  position: relative;
+   top:-60px;
+ }
+ #cuatro
+ {
+   width: 98%;
+   height: 60px;
+   margin: 10px auto;
+   position: relative;
+   top:-70px;
+   left: 3px;
+ }
+ h1
+ {
+  position: relative;
+  top:-10px;
+ }
+}
+
+
+/*Versión Imprimible*/
+
+@media print 
+{
+  figure, nav, #uno, #dos, #tres, #cuatro
+  {
+    background: black;
+  }
+  header 
+  {
+    margin: 30px auto;
+    width: 98%;
+    height: 70px;
+  }
+  figure 
+ {
+    width: 12%;
+    height: 70px;
+    float: left;
+ }
+nav 
+ {
+    width: 85%;
+    height: 70px;
+    float: right;
+ }
+
+ #uno
+ {
+  width: 98%;
+  height: 200px;
+  margin: 30px auto;
+ }
+
+#dos, #tres, #cuatro
+ {
+  float: left;
+  width: 30%;
+  height: 250px;
+  margin: 15px;
+  
+ }
+}
+
+
+/* Adicional */
+@media (min-width: 1200px) and (orientation: landscape) 
+{
+  * {background: blue;}
+  figure, nav, h1 , #uno, #dos, #tres, #cuatro
+  {
+    background: white;
+  }
+  h1
+  {
+    color: black;
+  }
+}

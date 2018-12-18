@@ -1,0 +1,326 @@
+//Version Telefono
+@media (min-width:320px)
+{
+    figure { position: relative; left: 25%; top: $tamano-FTM; }
+    figure img { width: 50%; }
+    header { height: 420px; }
+    nav
+    {
+        position: absolute;
+        margin: 50px;
+        margin-top: 5%;
+        text-align: center;
+
+        & ul li 
+        {
+            list-style: none;
+            padding: 10px;
+        }
+
+        & li 
+        {
+        border-bottom: 1px solid white;
+        width: 200px;
+        margin-top: 15px;
+        }
+        & a 
+        {
+            font-size: $tamano-FTM;
+        }
+    }
+    h1 
+    {
+        position: relative;
+        top: $tamano-FTM;
+        left: $tamano-FTM;
+    }
+    .contenedor-imagenes
+    {
+        float: left;
+        position: relative;
+        top:40px;
+        left: 15px;
+        margin: 5px;
+        overflow: hidden;
+    }
+    .contenedor-imagenes:hover .texto-especial1
+    {
+        @include detalles2(translateY(0%),226px) 
+    }
+    .texto-especial1 p { font-size: $tamano-FTM; }
+    .texto-especial1
+    { 
+      background: $color-Rosado;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial2
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial2 p { font-size: $tamano-FTM; }
+    .texto-especial2
+    {
+      background: $color-Azul;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial3
+    {
+        @include detalles2(translateY(0%),226px) 
+    }
+    .texto-especial3 p { font-size: $tamano-FTM; }
+    .texto-especial3
+    {
+    background:$color-Morado;
+    @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial4
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial4 p {font-size: $tamano-FTM;}
+    .texto-especial4
+    {
+      background: $color-Naranja;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+}
+//Tablets
+@media (min-width:885px) and (max-width:1023px)
+{
+   .contenedor-imagenes
+        {
+            margin: -10px;
+            position: relative;
+            top: 70px;
+            width: 22%;
+        }
+
+    .contenedor-imagenes img
+    {
+       width: 100%;
+    }
+
+    .contenedor-imagenes:nth-child(3)
+    {
+        position: relative;
+        left: 80px;
+        margin-top: 0px;
+    }
+    .contenedor-imagenes:nth-child(4)
+    {
+        position: relative;
+        
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+
+    .contenedor-imagenes:hover .texto-especial1
+    {
+        transform: translateY(0%);
+        height: 180px; 
+    }
+
+    .texto-especial1 p { font-size: 15px; }
+
+    .contenedor-imagenes:hover .texto-especial2
+    {
+        transform: translateY(0%);
+        height: 180px; 
+    }
+    .texto-especial2 p { font-size: 15px; }
+
+    .contenedor-imagenes:hover .texto-especial3
+    {
+        transform: translateY(0%);
+        height: 180px; 
+    }
+    .texto-especial3 p { font-size: 15px; }
+    .contenedor-imagenes:hover .texto-especial4
+    {
+        transform: translateY(0%);
+        height: 180px; 
+    }
+    .texto-especial4 p { font-size: 15px; }
+}
+
+@media (min-width:768px) 
+{
+    figure{ position: absolute; left: 60px; top: $tamano-FTM; }
+    figure img { width: 100%; }
+    header
+    {
+        height: 90px;
+        width:100%;
+    }
+    nav 
+    {
+        margin-top: 0;
+        display: inline-block;
+        position: relative;
+        float: right;
+
+        & li 
+        {
+            border-bottom:none;
+           width: 100px;
+           margin-top: 22px;
+           display: inline-block;
+        }
+        & a 
+        {
+            font-size: $tamano-FTM;
+        }
+    }
+
+    h1 
+    {
+        position: relative;
+        left: 65px;
+    }
+    
+    .portafolios
+    {
+        position: relative;
+        left: 48px;  
+    }
+    .contenedor-imagenes:nth-child(2)
+    {
+        position: relative;
+        left: 50px;
+    }
+    .contenedor-imagenes:nth-child(3)
+    {
+        position: relative;
+        top: 60px;
+    }
+    .contenedor-imagenes:nth-child(4)
+    {
+        position: relative;
+        left: 50px;
+        top: 60px;
+    } 
+}
+
+/*ESCRITORIO*/
+@media (min-width:1024px)
+{
+    figure{ position: relative; left: 25%; top: $tamano-FTM; }
+    figure img { width: 50%; }
+    header
+    {
+        float: left;
+        height: 657px;
+        width:25%;
+    }
+    nav
+    {
+        position: relative;
+        margin:$tamano-FTM;
+        margin-top: 40%;
+        text-align: right;
+
+        & li 
+        {
+            border-bottom: 1px solid white;
+            width: 200px;
+            margin-top: 15px;
+        }
+
+        & ul li 
+        {
+          list-style: none;
+        padding: 10px;
+        }
+         & a 
+         {
+            font-size: $tamano-FTM;
+         }
+    }
+    h1 
+    {
+        position: relative;
+        top: 30px;
+        left: 60px;
+    }
+    .portafolios
+    {
+        float: right;
+        position: relative;
+        top: -600px;
+        left: 200px;
+
+        &-contenedor-imagenes
+        {
+          float: left;
+          position: relative;
+          top:0px;
+          margin: 5px;
+          overflow: hidden;
+        }
+    }
+    .contenedor-imagenes:nth-child(1)
+    {
+        position: relative;
+        top: 50px;
+        left: 115px;
+    }
+    .contenedor-imagenes:nth-child(2)
+    {
+        position: relative;
+        top: 50px;
+        left: 200px;
+    }
+    .contenedor-imagenes:nth-child(3)
+    {
+        position: relative;
+        left: -95px;
+        top: 335px;
+    }
+    .contenedor-imagenes:nth-child(4)
+    {
+        position: relative;
+        left: 115px;
+        top: 80px;
+    }
+    .contenedor-imagenes:hover .texto-especial1
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial1 p { font-size: $tamano-FTM; }
+
+    .texto-especial1
+    { 
+      background: $color-Rosado;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial2
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial2 p { font-size: $tamano-FTM; }
+    .texto-especial2
+    {
+      background: $color-Azul;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial3
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial3 p { font-size: $tamano-FTM; }
+    .texto-especial3
+    {
+    background:$color-Morado;
+    @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+    .contenedor-imagenes:hover .texto-especial4
+    {
+        @include detalles2(translateY(0%),226px)
+    }
+    .texto-especial4 p { font-size: $tamano-FTM;}
+    .texto-especial4
+    {
+      background: $color-Naranja;
+      @include detalles(10px,absolute, 0, translateY(100%),all .5s, 2px,bold)
+    }
+}

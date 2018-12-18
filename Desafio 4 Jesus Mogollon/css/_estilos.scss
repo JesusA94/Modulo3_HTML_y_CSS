@@ -1,0 +1,75 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.flex-container
+{
+    & figure 
+    {
+        width: 50%;
+        margin-top: 15px;
+        & img { width: 30%; }
+    }
+    & nav  
+    {
+        margin-top: 60px;
+        font-family: $Texto-base;
+        & li  { display: inline-block;}  
+        & a 
+    {
+        color: $blanco;
+        text-decoration:none;
+        padding: 7px;
+    }
+      & a:hover 
+      {
+          background: $anaranjado;
+          border-radius: 5px;
+      }
+    }
+     @include contenedor (flex,center,$negro,150px)
+}
+h1 
+{
+    color: $anaranjado;
+    font-family: $Titulo;
+    text-align: center;
+    font-size: 45px;
+}
+hr
+{
+        height: 5px;
+        width: 50%;
+        background-color: grey;
+        margin-left: 150px;
+}
+.grid-container
+{
+        & img 
+        {
+             width: 50%;
+        }
+}
+.footer
+{
+    & p
+    {
+        color:$blanco;
+        font-family: $Texto-base;
+        margin-top: 40px;
+        margin-right: 450px;
+    }
+     & span
+     { color: $anaranjado;}
+    & img 
+    {
+      width: 40px;
+      height: 40px;
+      margin-top: 25px;
+      margin-left:25px
+    }
+     @include contenedor (flex,center,$negro,90px)
+}

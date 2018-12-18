@@ -1,0 +1,7 @@
+@mixin contenedor($visualizar,$alinear,$fondo,$altura)
+{
+    display: $visualizar;
+    justify-content:$alinear;
+    background:$fondo;
+    height:$altura;
+}

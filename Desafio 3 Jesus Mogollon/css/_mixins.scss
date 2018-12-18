@@ -1,0 +1,15 @@
+@mixin detalles($relleno,$posicion,$bajo,$transformar,$transicion,$espaciado,$Pesofuente) 
+{
+    padding: $relleno;
+    position: $posicion;
+    bottom: $bajo;
+    transform: $transformar;
+    transition: $transicion;
+    word-spacing:$espaciado;
+    font-weight: $Pesofuente;
+}
+@mixin detalles2($trasladar,$altura)
+{
+    transform: $trasladar;
+    height:$altura;
+}
